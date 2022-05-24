@@ -27,7 +27,8 @@ function test() {
                 do shell script quoted form of "/System/Applications/Mission Control.app/Contents/MacOS/Mission Control"
                 key code 124 using control down
                 end tell'
-        open --new -a "Google Chrome" --args --profile-directory="Profile 2"  $jazz
+        open --new -a "Google Chrome" --args --profile-directory="Profile 2"  $jazz ; sleep 2 ; 
+        osascript -e 'tell application "System Events" to key code 123 using control down'
 }
 
 function tube() {
