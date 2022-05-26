@@ -32,13 +32,12 @@ function test() {
 }
 
 function tube() {
-        if [[ $1 = "lofi" ]]; then
-                local tab="https://bit.ly/3MSt1tP"
-        elif [[ $1 == "jazz" ]]; then
-                local tab="https://bit.ly/3ar8fDd"
-        else return
-        fi
-        open --new -a "Google Chrome" --args --profile-directory="Profile 2" $tab
+    local tab="https://youtube.com"
+    case $1 in 
+      "lofi") tab="https://bit.ly/3MSt1tP" ;;
+      "jazz") tab="https://bit.ly/3ar8fDd"
+    esac
+    open --new -a "Google Chrome" --args --profile-directory="Profile 2" $tab
 }
 
 function compress() {
