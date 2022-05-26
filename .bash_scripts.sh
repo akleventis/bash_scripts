@@ -33,9 +33,9 @@ function test() {
 
 function tube() {
         if [[ $1 = "lofi" ]]; then
-                local tab="https://youtu.be/5qap5aO4i9A"
+                local tab="https://bit.ly/3MSt1tP"
         elif [[ $1 == "jazz" ]]; then
-                local tab="https://youtu.be/fEvM-OUbaKs"
+                local tab="https://bit.ly/3ar8fDd"
         else return
         fi
         open --new -a "Google Chrome" --args --profile-directory="Profile 2" $tab
